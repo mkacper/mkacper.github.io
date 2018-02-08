@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Beam Olympics Leaderboard</title>
+    <link rel="stylesheet" href="app.css">
+  </head>
+
+  <body>
+    <div class="olympics-container">
+      <p class="alert alert-info" role="alert"></p>
+      <p class="alert alert-danger" role="alert"></p>
+
+      <main role="main">
+<div class="tutorial">
+
+<div class="funky-text">
+    <h1><span class='char0'>B</span><span class='char1'>e</span><span class='char2'>a</span><span class='char3'>m</span><span class='char4'> </span><span class='char5'>O</span><span class='char6'>l</span><span class='char7'>y</span><span class='char8'>m</span><span class='char9'>p</span><span class='char10'>i</span><span class='char11'>c</span><span class='char12'>s</span></h1>
+</div>
+<p>
+    Beam olympics is a competition when you can prove your knowledge of Elixir (or Erlang) and programming skills in general.
+    If you would like to join the game you have to have Erlang or Elixir or docker installed on your machine.
+    You will play through an IEx (erl) session, server'll send you a task and you'll answer with a solution.
+</p>
+
+<!-- 
+<div class="funky-text">
+    <h1><span class='char0'>H</span><span class='char1'>o</span><span class='char2'>w</span><span class='char3'> </span><span class='char4'>T</span><span class='char5'>o</span><span class='char6'> </span><span class='char7'>P</span><span class='char8'>l</span><span class='char9'>a</span><span class='char10'>y</span><span class='char11'></span></h1>
+</div>
+-->
+
+<p>If you meet the above requirement just come near Erlang Solution stand and
+    connect to the <strong>BeamChallenge</strong> WiFi network
+    (password <strong>ilovebeam</strong>) and go to
+    <a href="http://192.168.88.230:4000/how-to-play"><b>http://192.168.88.230:4000/how-to-play</b></a> for detailed instructions.</p>
+
+
+<!--
+<p>We encourage you to run an IEx inside a docker container for security reasons.</p>
+<pre>$ docker run -it --rm -h elixir.local elixir:1.5.3-slim iex --name 50306@192.168.88.235 --cookie beam</pre>
+<p>But if you are breave enough you can run an IEx directly on your machine.</p>
+<pre>$ iex --name 50306@192.168.88.235 --cookie beam</pre>
+<p>Then just connect to the server.</p>
+<pre>
+iex> Node.connect :"olympics@192.168.88.230"
+true</pre>
+
+<p>Now you can signup a new user by running</p>
+
+<pre>iex> GenServer.call({:bo_server, :"olympics@192.168.88.230"}, {:signup, "joe"}) </pre>
+
+<p>You can fetch the current task with</p>
+
+<pre>iex> GenServer.call({:bo_server, :"olympics@192.168.88.230"}, {:task, "joe"}) </pre>
+
+<p>When you're done, you can submit your solution</p>
+
+<pre>iex> GenServer.call({:bo_server, :"olympics@192.168.88.230"}, {:submit, "joe", fn() -> :k end})</pre>
+
+<p>If you get stuck and want to skip the current task</p>
+
+<pre>iex> GenServer.call({:bo_server, :"olympics@192.168.88.230"}, {:skip, "joe"}) </pre>
+
+<p>And if you want to check your current score</p>
+
+<pre>iex> GenServer.call({:bo_server, :"olympics@192.168.88.230"}, {:score, "joe"}) </pre>
+-->
+
+<div class="funky-text">
+  <h1><span class='char0'>T</span><span class='char1'>h</span><span class='char2'>e</span><span class='char3'> </span><span class='char4'>G</span><span class='char5'>a</span><span class='char6'>m</span><span class='char7'>e</span><span class='char8'></span></h1>
+</div>
+
+<p>You will be able to play at any time during the first day of the conference.
+The challenges are aimed at beginner to intermediate level developers, and each
+one takes only a few minutes to solve.</p>
+
+<p>You can check the leaderboard and scores at the Erlang Solutions table at
+any time. At the end of the conference, the player with the highest score will
+win (TODO: change this part >) the Amazon Echo. In case a tie should occur, a draw will be conducted to
+select the prize winner.</p>
+
+<p>May the best Alchemist win!</p>
+
+<div class="funky-text">
+  <h1><span class='char0'>R</span><span class='char1'>u</span><span class='char2'>l</span><span class='char3'>e</span><span class='char4'>s</span><span class='char5'></span></h1>
+</div>
+
+<ul>
+  <li>To prevent fraud, you must always post solutions from the node where you signed up.</li>
+  <li>There is no undo, so if you skipped a task you can't choose to submit a solution for it later.</li>
+  <li>Each task has its own score. If you solve a task correctly, you get full points. If you skip a task, you lose half of that task points.</li>
+</div>
+      </main>
+
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>
