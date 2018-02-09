@@ -82,8 +82,43 @@ form.link, form.button {
 }
 /* This file is for your main application css. */
 
+@import url('https://fonts.googleapis.com/css?family=Lato:300,400,700,900');
+
 body {
-  background-color: #FAF6E8;
+  background-color: white;
+  font-family: 'Lato', sans-serif;
+  color: black;
+}
+
+h1 {
+  font-family: 'Lato', sans-serif;
+  font-weight: 300;
+  text-transform: uppercase;
+  text-decoration: underline;
+  -webkit-text-decoration-color: #c266ff; /* Safari */    
+  text-decoration-color: #c266ff;
+}
+
+th {
+  text-transform: uppercase;
+}
+
+button {
+    background-color: black;
+    border: none;
+    color: white;
+    padding: 15px 100px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+
+p, li{
+  font-weight: 300;
+  font-size: 16px;
 }
 
 .funky-text span {
@@ -139,6 +174,8 @@ body {
   font-weight: bold;
   font-size: 2rem;
   text-align: center;
+  padding-left: 40px;
+  padding-right: 40px;
 }
 
 .tutorial {
