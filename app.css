@@ -121,6 +121,11 @@ p, li{
   font-size: 16px;
 }
 
+.olympics-container {
+    text-align: justify;
+    padding: 15px;
+}
+
 .funky-text span {
   font-size: 4rem;
   display: inline-block;
